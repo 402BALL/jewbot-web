@@ -1,0 +1,125 @@
+:root {
+  /* Jewish Gold Theme */
+  --gold-bright: #FFD700;
+  --gold-primary: #C9A227;
+  --gold-dark: #B8860B;
+  --gold-muted: #8B7355;
+  
+  /* Blues */
+  --blue-deep: #1E3A5F;
+  --blue-dark: #0D1117;
+  --blue-surface: #161B22;
+  --blue-elevated: #21262D;
+  
+  /* Text */
+  --text-primary: #F0F0F0;
+  --text-secondary: #8B949E;
+  --text-muted: #6E7681;
+  --text-gold: #C9A227;
+  
+  /* Status */
+  --success: #3FB950;
+  --warning: #D29922;
+  --error: #F85149;
+  
+  /* Fonts */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--blue-dark);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--blue-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
+/* Selection */
+::selection {
+  background: var(--gold-primary);
+  color: var(--blue-dark);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold-primary);
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-primary) 50%, var(--gold-dark) 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Star of David background pattern */
+.star-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23C9A227' stroke-width='0.5' opacity='0.1'%3E%3Cpolygon points='30,5 50,45 10,45'/%3E%3Cpolygon points='30,55 10,15 50,15'/%3E%3C/g%3E%3C/svg%3E");
+}
+
