@@ -560,7 +560,7 @@ export default function Landing() {
             <span className="link-title">GitHub</span>
             <span className="link-desc">View the source</span>
           </a>
-          <a href="https://pump.fun/coin/9ACkcCjYEDTW88pVxwaebct9TqHkXj1zkYRWHjp4pump" target="_blank" rel="noopener noreferrer" className="link-card">
+          <a href="https://pump.fun/coin/9ntWBy66rpujEwWEeQvxg6HH6TFwFt9K5xG4TxLopump" target="_blank" rel="noopener noreferrer" className="link-card">
             <Star size={24} />
             <span className="link-title">$JEWBOT</span>
             <span className="link-desc">Get the token</span>
@@ -594,7 +594,7 @@ export default function Landing() {
           <span>·</span>
           <a href="/docs/telegram">Integrations</a>
           <span>·</span>
-          <a href="https://pump.fun/coin/9ACkcCjYEDTW88pVxwaebct9TqHkXj1zkYRWHjp4pump" target="_blank" rel="noopener noreferrer">$JEWBOT</a>
+          <a href="https://pump.fun/coin/9ntWBy66rpujEwWEeQvxg6HH6TFwFt9K5xG4TxLopump" target="_blank" rel="noopener noreferrer">$JEWBOT</a>
         </div>
         <p className="footer-credit">
           Built by <span className="footer-highlight">JEWBOT Team</span>
